@@ -8,6 +8,15 @@ body{
     font-family: sans-serif;
 }
 
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -999;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -62,4 +71,67 @@ nav a:hover{
 
 .knowledgebase:hover i{
     rotate: 180deg;
+}
+
+.knowledgebase {
+  position: relative;
+}
+
+/* .knowledgebase:hover .knowledge-base-container {
+  display: block;
+} */
+
+.knowledge-base-container {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  top: 18px;
+}
+
+.knowledge-base-container a {
+  /* display: block; */
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  height: 76vh;
+  padding: 10vh 5vw;
+  font-size: 24px;
+  
+}
+
+.search {
+  margin-top: 50px;
+  display: flex;
+    justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  gap: 8px;
+  width: 180px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 80px;
+}
+
+.search-container input {
+  border: none;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.category-section {
+  text-align: center;
+  margin-top: 100px;
+    height: 100vh;
+    width: 100%;
 }
