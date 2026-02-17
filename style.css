@@ -189,8 +189,16 @@ main p {
   z-index: -99;
 }
 
-.projects {
+.container {
   height: 100vh;
   display: flex;
   justify-content: center;
+  border: #030930 solid 2px;
+}
+
+.container .animate-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: #030930 solid 2px;
 }
